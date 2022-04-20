@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Integrantes en la familia</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form id="calculadora-familiares">
+            <label for="cantidad-integrantes">Cantidad de integrantes en la familia:</label><br>
+            <input type="number" name="cantidad-integrantes" id="cantidad-integrantes" max="20">
+            <input type="button" value="Siguiente paso" id="enviar">
+            <button type="reset" class="oculto" id="boton-resetear">Resetear</button>
+        </form>
+        <div>
+            <input type="button" name="calcular" value="Calcular" id="calcular" class="oculto">
+            <p id="respuesta"></p>
+        </div>
+        <div>
+            <ul id="errores">
+            </ul>
+        </div>
+        <script src="./calculos.js"></script>
+        <script src="./main.js"></script>
+        <script src="./pruebas.js"></script>
+    </body>
+</html>
